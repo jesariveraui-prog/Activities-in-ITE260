@@ -1,0 +1,16 @@
+
+name = input("What's your name: ")
+age = input("How old are you: ")
+address = input("Where do you live: ")
+email = input("What's your email address: ")
+number = int(input("What's your phone number: "))
+height = float(input("How tall are you: "))
+weight = float(input("What is your weight: "))
+
+print("Hello,", name, ("!"))
+print("You are", age,( "years old"))
+print("You live in", address)
+print("Your email is", email)
+print("Your phone number is", number)
+print("Your height is", height, ("cm tall"))
+print("You weigh", weight, ("kg"))
