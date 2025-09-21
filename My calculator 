@@ -1,0 +1,42 @@
+while True:
+    while True:
+        operators = ("+","-","*","/")
+        operator = input("Enter an operator (+ - * /):")
+        if operator not in operators:
+            print("Enter an operator.")
+            continue
+        else:
+            break
+    while True:
+        try:
+            num1 = int(input("Enter your 1st number:"))
+            break
+        except ValueError:
+            print("Enter a valid number")
+    while True:
+        try:
+            num2 = int(input("Enter your 2nd number:"))
+            break
+        except ValueError:
+            print("Enter a valid number")        
+    if operator == "+":
+        result = num1 + num2
+        print(result)
+    elif operator == "-":
+        result = num1 - num2
+        print(result)
+    elif operator == "*":
+        result = num1 * num2
+        print(result)
+    elif operator == "/":
+        if num2 == 0:
+            print("Division by 0 is not allowed.")
+        else:    
+            result = num1 / num2
+            print(result) 
+    else:
+        print(f"{operator} is not a valid operator.")
+    choice = input("Would you like to solve again? (yes/no):").lower()
+    if choice == "no":
+        print("Thank you for using this calculator .")
+        break          
